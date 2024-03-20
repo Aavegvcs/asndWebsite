@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.glassmorphism {
+  box-shadow: 0px 3px 20px 0px #0000001f;
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    101.08deg,
+    #b7d7ff 7.51%,
+    #84b9ff 98.68%
+  );
+}
+
+/* ============== ========== */
+
+.hero-section-wrapper {
+  background-image: url("./assets/images/hero-section-bg-img.png");
+}
+
+.our-services {
+  background-image: url("./assets/images/our-services-bg-img.jpg");
+  background-size: contain;
+}
+
+.how-do-section {
+  background-image: url("./assets/images/how-do-bg-img.jpg");
+  background-size: contain;
+}
+
+.ChooseLines ,.ChooseBrands ,.ChooseBubble {
+  animation-name: rotateChooseLine;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.ChooseBrands {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.ChooseBubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* ============== ========== */
+
+
+@keyframes rotateChooseLine {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-section-wrapper {
+    background-image: none;
+  }
+
+  .our-services {
+    background-image: none;
+  }
+}
