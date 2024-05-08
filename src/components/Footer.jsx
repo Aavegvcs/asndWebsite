@@ -28,7 +28,7 @@ const Footer = () => {
                   <div className="flex my-4">
                     <img src={EmailIcon} className="object-fit" alt="" />
                     <p className="w-[50%] text-[11px]">
-                      neelkanth1999@gmail.com
+                      neel.vashist@aaveg.com
                     </p>
                   </div>
                   <div className="flex my-4">
