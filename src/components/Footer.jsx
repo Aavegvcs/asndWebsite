@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/images/asnd logo.png";
+import Logo from "../assets/images/logo_in_footer.svg";
 import EmailIcon from "../assets/images/email_icon.png";
 import HomeIcon from "../assets/images/home_icon.png";
 import PhoneIcon from "../assets/images/phone_icon.png";
@@ -8,38 +8,38 @@ const Footer = () => {
   return (
     <div className="footer bg-black">
       <div className="w-[70%] mx-auto flex ">
-        <div className="md:col-3/12 text-[#fff] py-12">
-          <div className="flex flex-col justify-between">
-            <img src={Logo} className="w-[150px]" alt="" />
-            <h4 className="text-[16px] font-bold mb-5">
-              Best IT Solutions & Technology WordPress Theme for Your Business.
-            </h4>
-            <div className="flex flex-col justify-between">
-              <div>
-                <img src="" className="object-fit" alt="" />
-                <div className=" gap-[10]">
-                  <div className="flex my-4">
-                    <img src={HomeIcon} className="object-fit w-[60] h-[60]" alt="" />
-                    <p className="w-[50%] text-[11px]">
-                      Plot No. 15, kharsa no. 44, Near Dwarka Sector 9 Metro
-                      Station, New Delhi, Delhi 110077
-                    </p>
-                  </div>
-                  <div className="flex my-4">
-                    <img src={EmailIcon} className="object-fit" alt="" />
-                    <p className="w-[50%] text-[11px]">
-                      neel.vashist@aaveg.com
-                    </p>
-                  </div>
-                  <div className="flex my-4">
-                    <img src={PhoneIcon} className="object-fit" alt="" />
-                    <p className="w-[50%] text-[11px]">+91 8920432940</p>
-                  </div>
+
+        <div className="md:col-3/12">
+          <div>
+            <img src={Logo} alt="" />
+
+            <p className="text-[16px] font-normal leading-[24px] text-[#8B8B8B]">Best IT Solutions & Technology</p>
+            <ul className="p-0 m-0">
+              <li>
+                <img src={HomeIcon} alt="" />
+                <p className="text-[16px] font-normal leading-[24px] text-[#8B8B8B]">Dwarka Sector-9, New Delhi pin 110045</p>
+              </li>
+              <li>
+                <img src={PhoneIcon} alt="" />
+                <div className="flex flex-col gap-1">
+
+                  <span className="text-[16px] font-normal leading-[24px] text-[#8B8B8B]">+91-9876543210 </span>
+                  <span className="text-[16px] font-normal leading-[24px] text-[#8B8B8B]">+91-1234567890</span>
                 </div>
-              </div>
-            </div>
+              </li>
+              <li>
+                <img src={EmailIcon} alt="" />
+                <div className="flex flex-col gap-1">
+                  <span className="text-[16px] font-normal leading-[24px] text-[#8B8B8B]">Support@asnd.com</span>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
+        <div className="md:col-3/12">
+
+        </div>
+        <div className="md:col-3/12"></div>
         <div className="md:col-3/12"></div>
       </div>
     </div>

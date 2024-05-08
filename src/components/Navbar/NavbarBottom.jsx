@@ -32,7 +32,7 @@ const NavbarBottom = () => {
           <img src={AsndLogo} alt="logo" />
         </div>
 
-        <div
+        {/* <div
           className={`md:relative top-0 md:right-0 ${
             toggleMenu ? "-right-[0%]" : "-right-[100%]"
           }  md:h-auto h-[100vh] fixed bg-white md:w-auto w-[100vw] md:z-0 z-50 py-7 md:py-0`}
@@ -68,7 +68,12 @@ const NavbarBottom = () => {
           <button className="bg-gradient-to-r from-[#0B49F5] to-[#02B4FF] text-white font-normal rounded-[4px] w-[130px] py-[6px]">
             Free Quote
           </button>
-        </div>
+        </div> */}
+
+
+        <button className="bg-gradient-to-r from-[#0B49F5] to-[#02B4FF] text-white font-normal rounded-[4px] md:w-[130px] px-3 py-[6px]">
+            Free Quote
+          </button>
       </div>
     </div>
   );
