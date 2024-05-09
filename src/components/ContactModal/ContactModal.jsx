@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { RxCross2 } from 'react-icons/rx';
 
-const ContactModal = ({toggleModal}) => {
+const ContactModal = ({ toggleModal }) => {
     const [toggleQuiryType, setToggleQuiryType] = useState(false);
     const [name, setName] = useState("");
     const [mobile, setMobile] = useState(null);
@@ -71,29 +71,36 @@ const ContactModal = ({toggleModal}) => {
                                         {/* <img src={ContactMailImg} alt="" /> */}
                                     </div>
                                     <h4 className='font-medium text-[16px] mt-2'>Send your query</h4>
-                                    <span className='inline-block -mt-[8px]'>email@aaveg.com</span>
+                                    <span className='inline-block -mt-[8px]'>connect@aaveg.com</span>
                                 </div>
                                 <div className='flex flex-col gap-1 rounded-[12px] p-[12px]  bg-white shadow-[0px_3px_12px_0px_#0000001F] '>
                                     <div className='w-[45px] h-[45px] p-[6px] bg-gradient-to-r from-[#0B49F5] to-[#02B4FF] rounded-[12px]'>
                                         {/* <img src={PrioritySupport} alt="" /> */}
                                     </div>
                                     <h4 className='font-medium text-[16px] mt-2'>Priority Support</h4>
-                                    <div className='flex -mt-[4px]'> <span>+91-9876543210,</span>
-                                        <span> +91-9876543210 </span></div>
+                                    <div className='flex -mt-[4px]'>
+                                         <span>+91 92787 01674</span>
+                                        {/* <span> +91-9876543210 </span> */}
+                                        </div>
                                 </div>
                                 <div className='flex flex-col gap-1 rounded-[12px] p-[12px]  bg-white shadow-[0px_3px_12px_0px_#0000001F] '>
                                     <div className='w-[45px] h-[45px] p-[6px] bg-gradient-to-r from-[#0B49F5] to-[#02B4FF] rounded-[12px]'>
                                         {/* <img src={ContactLocationImg} alt="" /> */}
                                     </div>
                                     <h4 className='font-medium text-[16px] mt-1'>Office Address</h4>
-                                    <p>3rd Floor, D21, Corporate Park,<br /> Sector-21, Dwarka, New Delhi - <br /> 110077</p>
+                                    <p>
+
+                                        {/* 3rd Floor, D21, Corporate Park,<br /> Sector-21, Dwarka, New Delhi - <br /> 110077 */}
+
+                                        1515, 15th Floor, Tower-4, DLF Corporate Greens, Sector 74A, Gurugram, Haryana - 122004
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div className='md:w-8/12 w-full p-5 md:rounded-tr-[20px] md:rounded-br-[20px]  md:rounded-[0px] rounded-[20px] bg-white'>
                             <div className='h-full'>
                                 <div className='flex gap-3 flex-wrap relative'>
-                                    <button className='bg-transparent absolute right-2 top-2' onClick={()=>toggleModal(false)}><RxCross2 className='text-[28px]' /></button>
+                                    <button className='bg-transparent absolute right-2 top-2' onClick={() => toggleModal(false)}><RxCross2 className='text-[28px]' /></button>
                                     <div className={`${toggleQuiryType ? "bg-[#999999]" : "bg-gradient-to-r from-[#0B49F5] to-[#02B4FF] "} rounded-[12px]  py-2 px-4`} onClick={() => setToggleQuiryType(!toggleQuiryType)}><span className='text-white text-[16px] leading-[26px] font-normal hover:cursor-pointer'>Send your enquiry</span></div>
                                     <div className={`${toggleQuiryType ? "bg-gradient-to-r from-[#0B49F5] to-[#02B4FF]" : "bg-[#999999]"} rounded-[12px]  py-2 px-4`} onClick={() => setToggleQuiryType(!toggleQuiryType)}><span className='text-white text-[16px] leading-[26px] font-normal hover:cursor-pointer'>Arrange a call back</span></div>
                                 </div>

@@ -81,20 +81,25 @@ const Footer = () => {
             <ul className="p-0 m-0 flex flex-col gap-3">
               <li className="flex gap-1 items-start">
                 <img src={HomeIcon} alt="" />
-                <p className="text-[16px] font-normal leading-[24px] text-[#8B8B8B]">Dwarka Sector-9,<br /> New Delhi pin 110045</p>
+                <p className="text-[16px] font-normal leading-[24px] text-[#8B8B8B]">
+                  
+                     {/* Dwarka Sector-9,<br /> New Delhi pin 110045 */}
+                     1515, 15th Floor, Tower-4, DLF Corporate Greens, Sector 74A, Gurugram, Haryana - 122004
+                     
+                     </p>
               </li>
               <li className="flex gap-1 items-start">
                 <img src={PhoneIcon} alt="" />
                 <div className="flex flex-col gap-1">
 
-                  <span className="text-[16px] font-normal leading-[24px] text-[#8B8B8B]">+91-9876543210 </span>
-                  <span className="text-[16px] font-normal leading-[24px] text-[#8B8B8B]">+91-1234567890</span>
+                  <span className="text-[16px] font-normal leading-[24px] text-[#8B8B8B]">+91 92787 01674</span>
+                  {/* <span className="text-[16px] font-normal leading-[24px] text-[#8B8B8B]">+91-1234567890</span> */}
                 </div>
               </li>
               <li className="flex gap-1">
                 <img src={EmailIcon} alt="" />
                 <div className="flex flex-col gap-1">
-                  <span className="text-[16px] font-normal leading-[24px] text-[#8B8B8B]">Support@asnd.com</span>
+                  <span className="text-[16px] font-normal leading-[24px] text-[#8B8B8B]">connect@aaveg.com</span>
                 </div>
               </li>
             </ul>
