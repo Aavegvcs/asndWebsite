@@ -12,42 +12,42 @@ const servicesApp = [
     serviceImg: Service1,
     serviceTitle: "IT Consultation",
     serviceDesc:
-      "Trust our top minds to eliminate workflow pain points, implement new tech & app.",
+      "Expert consultancy to align your IT infrastructure with your business goals for sustained growth.",
     alt: "IT Consultation",
   },
   {
     serviceImg: Service2,
     serviceTitle: "Data Security",
     serviceDesc:
-      "Trust our top minds to eliminate workflow pain points, implement new tech & app.",
+      " Shielding your data fortress with cutting-edge encryption and vigilant threat detection.",
     alt: "Data Security",
   },
   {
     serviceImg: Service3,
     serviceTitle: "Web Development",
     serviceDesc:
-      "Trust our top minds to eliminate workflow pain points, implement new tech & app.",
+      " Building dynamic web experiences that captivate audiences and drive meaningful interactions.",
     alt: "Web Development",
   },
   {
     serviceImg: Service4,
     serviceTitle: "UI/UX Design",
     serviceDesc:
-      "Trust our top minds to eliminate workflow pain points, implement new tech & app.",
+      "Designing immersive digital journeys that prioritize user needs and amplify engagement and conversion.",
     alt: "UI/UX Design",
   },
   {
     serviceImg: Service5,
     serviceTitle: "Cloud Services",
     serviceDesc:
-      "Trust our top minds to eliminate workflow pain points, implement new tech & app.",
+      " Harnessing the cloud's potential to drive innovation, collaboration, and business growth with tailored solutions..",
     alt: "Cloud Services",
   },
   {
     serviceImg: Service6,
     serviceTitle: "App Development",
     serviceDesc:
-      "Trust our top minds to eliminate workflow pain points, implement new tech & app.",
+      "Bringing your app vision to life with bespoke solutions that prioritize performance, usability, and scalability.",
     alt: "App Development",
   },
 ];
@@ -61,10 +61,14 @@ const OurServices = () => {
             Our Services
           </h2>
           <h3 className="text-4xl text-center text-[#5B5B5B] font-normal">
-            <span className="text-[#222222] font-semibold">
+            {/* <span className="text-[#222222] font-semibold">
               Perfect Solution
             </span>{" "}
-            for your business
+            for your business */}
+
+
+
+            From development to consultation, we're your partner in tech evolution
           </h3>
         </div>
         <div className="flex flex-wrap w-full ">

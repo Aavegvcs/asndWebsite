@@ -9,57 +9,52 @@ import ChooseBubble from "../../assets/images/choose-bubbles.svg"
 const pointsArr = [
   {
     // img :PointImg,
-    text: "Tailored tech solutions for business growth.",
+    text: "Tailored Solutions",
     // alt :""
   },
   {
     // img :PointImg,
-    text: "Innovative expertise to fuel your success.",
+    text: "Proven Track Record ",
     // alt :""
   },
   {
     // img :"",
-    text: "Proven results through advanced tech solutions.",
+    text: "Client-Centric Approach",
     // alt :""
   },
   {
     // img :"",
-    text: "Gain a competitive edge with our technology.",
+    text: "Cutting-Edge Expertise ",
     // alt :""
   },
-  {
-    // img :"",
-    text: "Reliable, secure, scalable tech for businesses.",
-    // alt :""
-  },
+
 ];
 
 const WhyChooseUs = () => {
   return (
-    <div className="why-choose-us flex justify-center items-center h-[899px]">
+    <div className="why-choose-us flex justify-center items-center md:px-0 px-4 py-14 md:h-[899px]">
       <div className="flex flex-wrap w-full">
         <div className="md:w-6/12 h-full">
-            <div className="overflow-hidden">
-                <div className="relative p-7">
-                    <img src={ChooseLines} alt="" className="ChooseLines w-full h-full" />
-                    <img src={ChooseBrands} alt="" className="ChooseBrands w-full h-full" />
-                    <img src={ChooseBubble} alt="" className="ChooseBubble w-full h-full" />
-                </div>
+          <div className="overflow-hidden">
+            <div className="relative p-7">
+              <img src={ChooseLines} alt="" className="ChooseLines w-full h-full" />
+              <img src={ChooseBrands} alt="" className="ChooseBrands w-full h-full" />
+              <img src={ChooseBubble} alt="" className="ChooseBubble w-full h-full" />
             </div>
+          </div>
         </div>
         <div className="md:w-6/12">
           <div className="flex flex-col gap-[30px] justify-center h-full">
-            <div>
+            <div >
               <h4 className="text-[#0773F9] font-semibold text-[20px] leading-[20px]">Why Choose Us</h4>
             </div>
             <div className="flex flex-col gap-[15px]">
-              <h2 className="text-[#000] font-semibold text-[32px] leading-[20px]">Boost Your Business</h2>
+              <h2 className="text-[#000] font-semibold text-[32px] leading-[36px]">Empowering Your Tech Journey with Expertise and Innovation</h2>
               <h3 className="text-[#8B8B8B] font-semibold text-[24px] leading-[20px]">with ASND</h3>
             </div>
             <div>
               <p className="text-[#666666] font-normal text-[16px] leading-[24px]">
-                Benefit from our team of seasoned professionals with extensive
-                experience in software development across various industries.
+                Benefit from our team of seasoned professionals with extensive experience in software development across various industries
               </p>
             </div>
             <div className="flex flex-col gap-3">

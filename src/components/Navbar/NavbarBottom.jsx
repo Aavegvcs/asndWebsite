@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import AsndLogo from "../../assets/images/asnd-logo.png";
+import AsndLogo from "../../assets/images/logo_in_footer.svg";
 import { NavLink } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
+import { Box, Modal } from "@mui/material";
+import ContactModal from "../ContactModal/ContactModal";
 
 const navLinks = [
   {
@@ -23,16 +25,28 @@ const navLinks = [
   },
 ];
 
-const NavbarBottom = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
-  return (
-    <div className="bg-white  md:rounded-t-[35px] rounded-t-[0px] flex justify-between items-center h-[80px]">
-      <div className="md:w-[70%] w-full mx-auto flex justify-between items-center nav-bottom">
-        <div className="px-[8px]">
-          <img src={AsndLogo} alt="logo" />
-        </div>
 
-        {/* <div
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  // width: 1200,
+
+
+};
+const NavbarBottom = () => {
+  const [toggleContactModal, setToggleContactModal] = useState(false)
+  return (
+
+    <>
+      <div className="bg-white  md:rounded-t-[35px] rounded-t-[0px] flex justify-between items-center h-[80px]">
+        <div className="md:w-[70%] w-full mx-auto flex justify-between items-center nav-bottom">
+          <div className="px-[8px]">
+            <img src={AsndLogo} alt="logo" />
+          </div>
+
+          {/* <div
           className={`md:relative top-0 md:right-0 ${
             toggleMenu ? "-right-[0%]" : "-right-[100%]"
           }  md:h-auto h-[100vh] fixed bg-white md:w-auto w-[100vw] md:z-0 z-50 py-7 md:py-0`}
@@ -71,11 +85,31 @@ const NavbarBottom = () => {
         </div> */}
 
 
-        <button className="bg-gradient-to-r from-[#0B49F5] to-[#02B4FF] text-white font-normal rounded-[4px] md:w-[130px] px-3 py-[6px]">
-            Free Quote
+          <button className="bg-gradient-to-r from-[#0B49F5] to-[#02B4FF] text-white font-normal rounded-[4px] md:w-[130px] px-3 py-[6px]" onClick={() => setToggleContactModal(true)}>
+          Contact Us
           </button>
+        </div>
       </div>
-    </div>
+
+
+
+
+      <Modal
+        open={toggleContactModal}
+        onClose={() => setToggleContactModal(false)}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+
+          <ContactModal
+
+            toggleModal={setToggleContactModal}
+
+          />
+        </Box>
+      </Modal>
+    </>
   );
 };
 
